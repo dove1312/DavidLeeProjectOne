@@ -1,0 +1,154 @@
+.info{
+    background-color: #2B331B;
+
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 50px;
+        font-weight: 400;
+        margin: 0;
+    }
+    p{
+        color: white;
+    }
+
+    i{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        color: black;
+        font-size: 25px;
+    }
+    
+    .infoContainer{
+    width: calc(50% - 10px);
+    margin: 0 5px;
+    display: flex;
+    }
+
+
+    .infoContainer1, .infoContainer2{
+    margin-top: 270px;
+    margin-bottom: 50px;
+    }
+
+    .infoContainer3, .infoContainer4{
+    margin-bottom: 150px;
+    }
+}
+
+.about{
+    height: 80vh;
+    background-color: #171B0E;
+    position: relative;
+
+    .left{
+        position: absolute;
+        top: -50px;
+    }
+
+    .right{
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h3{
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .aboutContainer{
+        width: 50%;
+    }
+
+    .aboutContainer2, .aboutContainer3{
+        padding: 80px;
+    }
+
+    .aboutContainer1{
+        position: relative;
+    }
+
+    .aboutContainer3{
+        text-align: right;
+    }
+}
+
+.win{
+    background-color: $pine;
+
+    .wrapper{
+        padding: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3{
+        text-align: center;
+        margin: 0;
+    }
+
+    button{
+        margin: 0 auto;
+    }
+}
+
+.banner{
+    background-color: $pine;
+}
+
+.info2{
+    background-color: $pine;
+    padding: 120px 0;
+    .wrapper{
+        display: flex;
+        align-content: center;
+    }
+    .info2Left{
+        width: 21%;
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .info2Right{
+        width: 60%;
+    }
+}
+
+.gallery{
+    background-color: $almostblack;
+    padding: 100px 0;
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img{
+        width: 31%;
+    }
+}
+
+.homeFooter{
+    background-color: black;
+    p{
+        margin: 0;
+        text-align: center;
+    }
+}

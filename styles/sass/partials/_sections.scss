@@ -37,7 +37,7 @@
 
 
     .infoContainer1, .infoContainer2{
-    margin-top: 270px;
+    margin-top: 250px;
     margin-bottom: 50px;
     }
 
@@ -47,16 +47,19 @@
 }
 
 .about{
-    height: 80vh;
     background-color: #171B0E;
     position: relative;
 
     .left{
+        width: 40%;
+        height: 52.5%;
         position: absolute;
         top: -50px;
     }
 
     .right{
+        width: 41%;
+        height: 53%;
         position: absolute;
         bottom: -50px;
         right: 0;
@@ -65,26 +68,59 @@
     .wrapper{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     h3{
-        font-size: 2rem;
+        font-size: 38px;
         font-weight: 400;
         margin: 0;
     }
 
-    .aboutContainer{
-        width: 50%;
+    button{
+        background-color: $primary;
+        border: none;
+        padding: 12px;
+        letter-spacing: 1px;
     }
 
-    .aboutContainer2, .aboutContainer3{
-        padding: 80px;
+    .aboutContainer1, .aboutContainer2{
+        margin-bottom: 100px;
     }
 
-    .aboutContainer1{
-        position: relative;
+    .aboutContainer2{
+        margin-top: 100px;
     }
 
+    .aboutContainer3{
+        margin-bottom: 100px;
+    }
+
+    .aboutContainer1,
+    .aboutContainer2,
+    .aboutContainer3,
+    .aboutContainer4{
+        width: 40%;
+    }
+    .yellowBox1{
+    width: 39.5%;
+    height: 50.5%;
+    background-color: $primary;
+    position: absolute;
+    left: 30px;
+    top: -12px;
+    }
+    .yellowBox2{
+        width: 40.5%;
+        height: 50.5%;
+        background-color: $primary;
+        position: absolute;
+        right: 25px;
+        bottom: -68px;
+    }
+    // .aboutContainer2, .aboutContainer3{
+    //     padding: 80px;
+    // }
     .aboutContainer3{
         text-align: right;
     }
@@ -94,12 +130,14 @@
     background-color: $pine;
 
     .wrapper{
-        padding: 150px;
+        padding: 150px 90px;
         display: flex;
         flex-direction: column;
     }
 
     h3{
+        color: $primary;
+        font-size: 2rem;
         text-align: center;
         margin: 0;
     }
@@ -109,25 +147,49 @@
     }
 }
 
-.banner{
-    background-color: $pine;
+.banner img{
+    width: 100%;
 }
 
 .info2{
+    h3{
+        color: $primary;
+        font-size: 2rem;
+        font-weight: 400;
+    }
     background-color: $pine;
     padding: 120px 0;
     .wrapper{
         display: flex;
-        align-content: center;
-    }
-    .info2Left{
-        width: 21%;
-        margin-right: 10%;
-        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
+    .info2Left{
+        width: 27%;
+        margin-right: 7%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+        }
+        .yellowBox3{
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+        }
+    }
     .info2Right{
-        width: 60%;
+        width: 71%;
+        h3{
+            margin: 0;
+        }
     }
 }
 
@@ -145,10 +207,9 @@
     }
 }
 
-.homeFooter{
+.findOutMore{
+    color: white;
     background-color: black;
-    p{
-        margin: 0;
-        text-align: center;
-    }
+    padding: 13px 20px;
+    border: none;
 }

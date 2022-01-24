@@ -6,6 +6,7 @@
 
 html {
     font-size: 125%;
+    letter-spacing: 1px;
 }
 
 body{
@@ -16,8 +17,13 @@ body{
 p{
     font-family: 'Barlow', sans-serif;
     line-height: 28px;
+    letter-spacing: 1px;
 }
 
 img{
     max-width: 100%;
+}
+
+button{
+    letter-spacing: 1px;
 }

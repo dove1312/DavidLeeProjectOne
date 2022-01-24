@@ -1,9 +1,10 @@
-header{
-    height: 90vh;
+.homeHeader{
+    height: 80vh;
     background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
     background-size: cover;
     position: relative;
     img{
+    width: 52%;
     position: absolute;
     right: 0;
     bottom: -217px;
@@ -42,4 +43,26 @@ span{
     color: black;
     height: 85px;
     margin-bottom: 10px;
+}
+
+
+
+// blog header start
+
+.blogHeader{
+    background-image: url(../../the-restaurant-mall-assets/blog-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    nav ul{
+        padding: 75px 0;
+    }
+    a{
+        margin: 0;
+        margin-right: 20px;
+    }
+    img{
+        position: relative;
+        right: 0;
+    }
 }

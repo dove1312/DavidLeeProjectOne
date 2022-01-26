@@ -230,6 +230,10 @@ html {
   overflow: hidden;
 }
 
+body {
+  background-color: #2B331B;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -257,6 +261,11 @@ img {
 }
 
 button {
+  letter-spacing: 1px;
+}
+
+li {
+  font-family: "Barlow", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -310,6 +319,7 @@ span {
 }
 
 .blogHeader {
+  height: 578px;
   background-image: url(../../the-restaurant-mall-assets/blog-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -319,11 +329,12 @@ span {
 }
 .blogHeader a {
   margin: 0;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 .blogHeader img {
-  position: relative;
+  position: absolute;
   right: 0;
+  bottom: -130px;
 }
 
 .info {
@@ -515,6 +526,54 @@ span {
   background-color: black;
   padding: 13px 20px;
   border: none;
+}
+
+.blogInfo {
+  background-color: #2B331B;
+  position: relative;
+}
+.blogInfo .waitressImg {
+  width: 60%;
+  height: 646px;
+  position: absolute;
+  top: -264px;
+  right: 0;
+  box-shadow: -20px 20px #FFD300;
+}
+.blogInfo .sideImg {
+  width: 30%;
+  height: 433px;
+  position: absolute;
+  top: -15px;
+}
+.blogInfo .blogBox {
+  margin-top: 100px;
+  width: 25%;
+  min-height: 900px;
+  background-color: #171B0E;
+  padding: 420px 30px 0 30px;
+  margin-left: 6%;
+}
+.blogInfo .blogBox h3 {
+  color: #FFD300;
+}
+.blogInfo .blogBox ul {
+  padding-left: 20px;
+}
+.blogInfo .blogBox li {
+  margin: 10px 0;
+}
+.blogInfo .blogBox .blogBoxTop {
+  margin-bottom: 100px;
+}
+.blogInfo .employment {
+  width: calc(60% + 20px);
+  position: absolute;
+  right: 0;
+  top: 385px;
+  padding: 90px;
+  border-left: 3px solid #FFD300;
+  border-bottom: 3px solid #FFD300;
 }
 
 .homeFooter {

@@ -1,3 +1,7 @@
+body{
+    background-color: $pine;
+}
+
 .wrapper{
     max-width: 1260px;
     width: 90%;
@@ -25,5 +29,10 @@ img{
 }
 
 button{
+    letter-spacing: 1px;
+} 
+
+li{
+    font-family: 'Barlow', sans-serif;
     letter-spacing: 1px;
 }

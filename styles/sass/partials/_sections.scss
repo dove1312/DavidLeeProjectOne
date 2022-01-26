@@ -213,3 +213,63 @@
     padding: 13px 20px;
     border: none;
 }
+
+
+
+
+// BLOG SECTIONS
+
+.blogInfo{
+    background-color: $pine;
+    position: relative;
+
+    .waitressImg{
+        width: 60%;
+        height: 646px;
+        position: absolute;
+        top: -264px;
+        right: 0;
+        box-shadow: -20px 20px $primary;
+    }
+
+    .sideImg{
+        width: 30%;
+        height: 433px;
+        position: absolute;
+        top: -15px;
+    }
+
+    .blogBox{
+        margin-top: 100px;
+        h3{
+            color: $primary;
+        }
+        width: 25%;
+        min-height: 900px;
+        background-color: $almostblack;
+        padding: 420px 30px 0 30px;
+        margin-left: 6%;
+
+        ul{
+            padding-left: 20px;
+        }
+
+        li{
+            margin: 10px 0;
+        }
+
+        .blogBoxTop{
+            margin-bottom: 100px;
+        }
+    }
+    
+    .employment{
+        width: calc(60% + 20px);
+        position: absolute;
+        right: 0;
+        top: 385px;
+        padding: 90px;
+        border-left: 3px solid $primary;
+        border-bottom: 3px solid $primary;
+    }
+}

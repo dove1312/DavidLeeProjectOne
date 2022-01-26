@@ -50,6 +50,7 @@ span{
 // blog header start
 
 .blogHeader{
+    height: 578px;
     background-image: url(../../the-restaurant-mall-assets/blog-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,10 +60,13 @@ span{
     }
     a{
         margin: 0;
-        margin-right: 20px;
+        margin-right: 40px;
     }
+
     img{
-        position: relative;
+        position: absolute;
         right: 0;
+        bottom: -130px;
     }
+    
 }

@@ -273,6 +273,7 @@ li {
   height: 80vh;
   background-image: url(../../the-restaurant-mall-assets/home-header.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
 }
 .homeHeader img {
@@ -290,6 +291,7 @@ nav ul {
 }
 
 a {
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   text-decoration: none;
   margin: 0 20px;
@@ -322,6 +324,7 @@ span {
   height: 578px;
   background-image: url(../../the-restaurant-mall-assets/blog-header.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .blogHeader nav ul {
@@ -335,6 +338,18 @@ span {
   position: absolute;
   right: 0;
   bottom: -130px;
+}
+
+.contactHeader {
+  height: 567px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../the-restaurant-mall-assets/contact-header.jpg);
+}
+.contactHeader h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-left: 30px;
 }
 
 .info {
@@ -381,6 +396,9 @@ span {
 .about {
   background-color: #171B0E;
   position: relative;
+}
+.about p {
+  margin: 10px 0 40px 0;
 }
 .about .left {
   width: 40%;
@@ -531,12 +549,14 @@ span {
 .blogInfo {
   background-color: #2B331B;
   position: relative;
+  display: flex;
+  justify-content: right;
 }
 .blogInfo .waitressImg {
   width: 60%;
   height: 646px;
   position: absolute;
-  top: -264px;
+  top: -164px;
   right: 0;
   box-shadow: -20px 20px #FFD300;
 }
@@ -544,15 +564,19 @@ span {
   width: 30%;
   height: 433px;
   position: absolute;
-  top: -15px;
+  left: 0;
+  top: 84px;
+  z-index: 1;
 }
 .blogInfo .blogBox {
-  margin-top: 100px;
   width: 25%;
   min-height: 900px;
   background-color: #171B0E;
   padding: 420px 30px 0 30px;
   margin-left: 6%;
+  position: absolute;
+  top: 100px;
+  left: 0;
 }
 .blogInfo .blogBox h3 {
   color: #FFD300;
@@ -564,22 +588,151 @@ span {
   margin: 10px 0;
 }
 .blogInfo .blogBox .blogBoxTop {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .blogInfo .employment {
   width: calc(60% + 20px);
-  position: absolute;
-  right: 0;
-  top: 385px;
+  margin-top: 450px;
   padding: 90px;
   border-left: 3px solid #FFD300;
   border-bottom: 3px solid #FFD300;
 }
+.blogInfo .employment h2 {
+  color: #FFD300;
+}
 
-.homeFooter {
+.comments {
+  display: flex;
+  justify-content: right;
+}
+.comments h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.comments h4 {
+  color: #FFD300;
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+}
+.comments .commentsWrap {
+  width: 60%;
+  padding: 90px 90px 90px 70px;
+}
+.comments .commentBox1 {
+  margin-bottom: 80px;
+}
+.comments .commentBox1, .comments .commentBox2 {
+  display: flex;
+}
+.comments .commentBox1 img, .comments .commentBox2 img {
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+}
+.comments .blogForm {
+  margin-top: 80px;
+}
+.comments .blogForm #name {
+  width: calc(50% - 20px);
+  color: white;
+  background-color: #2B331B;
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid #FFD300;
+  margin-right: 32px;
+}
+.comments .blogForm #email {
+  width: calc(50% - 20px);
+  color: white;
+  background-color: #2B331B;
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid #FFD300;
+}
+.comments .blogForm #comment {
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #2B331B;
+  color: white;
+  border: 2px solid #FFD300;
+}
+.comments .blogForm button {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #FFD300;
+  border: none;
+  padding: 15px;
+}
+
+.contactInfo {
+  position: relative;
+  margin-bottom: 200px;
+}
+.contactInfo i {
+  color: #FFD300;
+  margin-right: 20px;
+}
+.contactInfo .contactInfoBox {
+  margin-top: 100px;
+}
+.contactInfo .contactInfoBox p {
+  margin: 0;
+}
+.contactInfo .contactInfoBox .space {
+  margin: 20px 0 30px 0;
+}
+.contactInfo .contactFormWrap {
+  width: 60%;
+  padding: 50px 60px 50px 60px;
+  background-color: #171B0E;
+  position: absolute;
+  top: -308px;
+  right: 90px;
+  box-shadow: 20px 20px #FFD300;
+}
+.contactInfo .contactForm #name {
+  width: calc(50% - 20px);
+  color: white;
+  background-color: #171B0E;
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid #FFD300;
+  margin-right: 32px;
+  letter-spacing: 1px;
+}
+.contactInfo .contactForm #email {
+  width: calc(50% - 20px);
+  color: white;
+  background-color: #171B0E;
+  padding: 25px;
+  border: none;
+  border-bottom: 2px solid #FFD300;
+  letter-spacing: 1px;
+}
+.contactInfo .contactForm #comment {
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #171B0E;
+  color: white;
+  border: 2px solid #FFD300;
+  letter-spacing: 1px;
+}
+.contactInfo .contactForm button {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #FFD300;
+  border: none;
+  padding: 15px;
+}
+
+footer {
   background-color: black;
 }
-.homeFooter p {
+footer p {
   margin: 0;
   text-align: center;
 }/*# sourceMappingURL=styles.css.map */

@@ -676,6 +676,7 @@ span {
   margin-right: 20px;
 }
 .contactInfo .contactInfoBox {
+  width: 29%;
   margin-top: 100px;
 }
 .contactInfo .contactInfoBox p {
@@ -693,7 +694,7 @@ span {
   right: 90px;
   box-shadow: 20px 20px #FFD300;
 }
-.contactInfo .contactForm #name {
+.contactInfo .contactForm #contactName {
   width: calc(50% - 20px);
   color: white;
   background-color: #171B0E;
@@ -703,7 +704,7 @@ span {
   margin-right: 32px;
   letter-spacing: 1px;
 }
-.contactInfo .contactForm #email {
+.contactInfo .contactForm #contactEmail {
   width: calc(50% - 20px);
   color: white;
   background-color: #171B0E;
@@ -753,6 +754,70 @@ footer p {
 
   .info .infoContainer3 {
     margin: 50px 0;
+  }
+
+  .blogInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+  }
+  .blogInfo .waitressImg {
+    width: 90%;
+    height: unset;
+    position: static;
+    margin: 50px 0;
+  }
+  .blogInfo .sideImg {
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -83px);
+  }
+  .blogInfo .blogBox {
+    width: 90%;
+    margin: 0;
+    position: static;
+    order: -1;
+    text-align: center;
+  }
+  .blogInfo .employment {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .comments {
+    width: 100%;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .comments .commentsWrap {
+    width: 90%;
+    padding: 0;
+  }
+
+  .contactInfo {
+    margin-bottom: 50px;
+  }
+  .contactInfo .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contactInfo .contactInfoBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .contactInfo .contactFormWrap {
+    width: 100%;
+    position: static;
+    box-shadow: none;
   }
 }
 @media (max-width: 768px) {
@@ -856,6 +921,13 @@ footer p {
   .win .wrapper {
     padding: 150px 0;
   }
+
+  .contactInfo .contactForm #contactName {
+    width: 100%;
+  }
+  .contactInfo .contactForm #contactEmail {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .homeHeader h1 {
@@ -905,5 +977,46 @@ footer p {
   .gallery .wrapper img {
     width: 90%;
     margin: 10px 0;
+  }
+
+  .blogInfo .sideImg {
+    width: 80%;
+  }
+  .blogInfo .blogBox {
+    text-align: left;
+  }
+  .blogInfo .waitressImg {
+    box-shadow: none;
+  }
+
+  .comments .commentBox1, .comments .commentBox2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .comments .commentBox1 img, .comments .commentBox2 img {
+    margin: 0;
+  }
+  .comments .commentBox1 {
+    margin: 0;
+  }
+  .comments .commentBox2 {
+    margin: 30px 0;
+  }
+  .comments .blogForm {
+    margin: 0;
+  }
+  .comments .blogForm #name {
+    width: 100%;
+  }
+  .comments .blogForm #email {
+    width: 100%;
+  }
+
+  .contactInfo .contactFormWrap {
+    padding: 50px 30px 50px 30px;
+  }
+  .contactInfo .contactInfoBox p {
+    letter-spacing: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
 @media (max-width: 940px){
+    // HOMEPAGE ------------------------------------------
     .info .wrapper{
         flex-direction: column;
         align-items: center;
@@ -14,9 +15,77 @@
     .info .infoContainer3{
         margin: 50px 0;
     }
+
+
+
+    // BLOG PAGE ------------------------------------------
+    .blogInfo{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        .waitressImg{
+            width: 90%;
+            height: unset;
+            position: static;
+            margin: 50px 0;
+        }
+        .sideImg{
+            width: 50%;
+            left: 50%;
+            transform: translate(-50%, -83px);
+        }
+        .blogBox{
+            width: 90%;
+            margin: 0;
+            position: static;
+            order: -1;
+            text-align: center;
+        }
+        .employment{
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+    }
+    .comments{
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        margin-top: 100px;
+        .commentsWrap{
+            width: 90%;
+            padding: 0;
+        }
+    }
+
+    // CONTACT -----------------------------------
+    .contactInfo{
+        margin-bottom: 50px;
+        .wrapper{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .contactInfoBox{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .contactFormWrap{
+            width: 100%;
+            position: static;
+            box-shadow: none;
+        }
+    }
 }
 
 @media (max-width: 768px){
+    // HOMEPAGE --------------------------------
     .homeHeader{
         height: unset;
         .wrapper{
@@ -119,9 +188,25 @@
             padding: 150px 0;
         }
     }
+
+    // BLOG ----------------------------------------
+
+
+    // CONTACT -------------------------------------
+    .contactInfo{
+        .contactForm{
+            #contactName{
+                width: 100%;
+            }
+            #contactEmail{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px){
+    // HOMEPAGE -----------------------------------
     .homeHeader{
         h1{
             font-size: 2rem;
@@ -174,6 +259,58 @@
                 width: 90%;
                 margin: 10px 0;
             }
+        }
+    }
+
+
+    // BLOG ----------------------------------------
+    .blogInfo{
+        .sideImg{
+            width: 80%;
+        }
+        .blogBox{
+            text-align: left;
+        }
+        .waitressImg{
+            box-shadow: none;
+        }
+    }
+    
+    .comments{
+        .commentBox1, .commentBox2{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            img{
+                margin: 0;
+            }
+        }
+        .commentBox1{
+            margin: 0;
+        }
+        .commentBox2{
+            margin: 30px 0;
+        }
+        .blogForm{
+            margin: 0;
+            
+            #name{
+                width: 100%;
+            }
+            #email{
+                width: 100%;
+            }
+        }
+    }
+
+
+    // CONTACT ----------------------------------
+    .contactInfo{
+        .contactFormWrap{
+            padding: 50px 30px 50px 30px;
+        }
+        .contactInfoBox p{
+            letter-spacing: 0px;
         }
     }
 }

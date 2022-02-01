@@ -368,6 +368,7 @@
     }
 
     .contactInfoBox{
+        width: 29%;
         margin-top: 100px;
 
         p{
@@ -392,7 +393,7 @@
     
     .contactForm{
 
-        #name{
+        #contactName{
             width: calc(50% - 20px);
             color: white;
             background-color: $almostblack;
@@ -402,7 +403,7 @@
             margin-right: 32px;
             letter-spacing: 1px;
         }
-        #email{
+        #contactEmail{
             width: calc(50% - 20px);
             color: white;
             background-color: $almostblack;

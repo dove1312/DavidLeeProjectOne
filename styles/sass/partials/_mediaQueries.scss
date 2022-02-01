@@ -80,6 +80,13 @@
             width: 100%;
             position: static;
             box-shadow: none;
+            background-color: $pine;
+            padding: 20px 0;
+        }
+        .contactForm{
+            #contactName, #contactEmail, #contactComment{
+                background-color: $pine;
+        }
         }
     }
 }
@@ -332,9 +339,15 @@
         .waitressImg{
             box-shadow: none;
         }
+        .employment h2{
+            text-align: center;
+        }
     }
     
     .comments{
+        h3{
+            text-align: center;
+        }
         .commentBox1, .commentBox2{
             flex-direction: column;
             align-items: center;
@@ -354,6 +367,7 @@
             
             #name{
                 width: 100%;
+                margin: 0;
             }
             #email{
                 width: 100%;

@@ -713,7 +713,7 @@ span {
   border-bottom: 2px solid #FFD300;
   letter-spacing: 1px;
 }
-.contactInfo .contactForm #comment {
+.contactInfo .contactForm #contactComment {
   width: 100%;
   margin-top: 30px;
   padding: 30px;
@@ -818,6 +818,11 @@ footer p {
     width: 100%;
     position: static;
     box-shadow: none;
+    background-color: #2B331B;
+    padding: 20px 0;
+  }
+  .contactInfo .contactForm #contactName, .contactInfo .contactForm #contactEmail, .contactInfo .contactForm #contactComment {
+    background-color: #2B331B;
   }
 }
 @media (max-width: 768px) {
@@ -1043,7 +1048,13 @@ footer p {
   .blogInfo .waitressImg {
     box-shadow: none;
   }
+  .blogInfo .employment h2 {
+    text-align: center;
+  }
 
+  .comments h3 {
+    text-align: center;
+  }
   .comments .commentBox1, .comments .commentBox2 {
     flex-direction: column;
     align-items: center;
@@ -1063,6 +1074,7 @@ footer p {
   }
   .comments .blogForm #name {
     width: 100%;
+    margin: 0;
   }
   .comments .blogForm #email {
     width: 100%;

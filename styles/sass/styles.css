@@ -402,13 +402,13 @@ span {
 }
 .about .left {
   width: 40%;
-  height: 52.5%;
+  height: 46vh;
   position: absolute;
   top: -50px;
 }
 .about .right {
   width: 41%;
-  height: 53%;
+  height: 46vh;
   position: absolute;
   bottom: -50px;
   right: 0;
@@ -446,7 +446,7 @@ span {
 }
 .about .yellowBox1 {
   width: 39.5%;
-  height: 50.5%;
+  height: 44vh;
   background-color: #FFD300;
   position: absolute;
   left: 30px;
@@ -454,7 +454,7 @@ span {
 }
 .about .yellowBox2 {
   width: 40.5%;
-  height: 50.5%;
+  height: 44vh;
   background-color: #FFD300;
   position: absolute;
   right: 25px;

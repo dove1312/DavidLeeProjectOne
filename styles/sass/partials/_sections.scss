@@ -56,14 +56,14 @@
 
     .left{
         width: 40%;
-        height: 52.5%;
+        height: 46vh;
         position: absolute;
         top: -50px;
     }
 
     .right{
         width: 41%;
-        height: 53%;
+        height: 46vh;
         position: absolute;
         bottom: -50px;
         right: 0;
@@ -108,7 +108,7 @@
     }
     .yellowBox1{
     width: 39.5%;
-    height: 50.5%;
+    height: 44vh;
     background-color: $primary;
     position: absolute;
     left: 30px;
@@ -116,7 +116,7 @@
     }
     .yellowBox2{
         width: 40.5%;
-        height: 50.5%;
+        height: 44vh;
         background-color: $primary;
         position: absolute;
         right: 25px;

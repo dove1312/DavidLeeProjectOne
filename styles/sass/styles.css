@@ -531,12 +531,26 @@ span {
   background-color: #171B0E;
   padding: 100px 0;
 }
-.gallery .wrapper {
+.gallery ul {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
-.gallery img {
+.gallery ul li {
   width: 31%;
+  list-style: none;
+}
+.gallery .twoButtons {
+  display: flex;
+  justify-content: center;
+}
+.gallery button {
+  width: 50px;
+  height: 50px;
+}
+.gallery .results {
+  display: flex;
+  justify-content: center;
 }
 
 .findOutMore {
@@ -826,24 +840,40 @@ footer p {
   }
 }
 @media (max-width: 768px) {
-  .homeHeader {
-    height: unset;
+  header .wrapper {
+    position: relative;
   }
+  header nav {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+  }
+  header nav ul {
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 70px 0;
+    opacity: 0;
+  }
+
   .homeHeader .wrapper {
+    height: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    position: relative;
   }
   .homeHeader nav {
     display: flex;
     justify-content: center;
-    margin-bottom: 300px;
   }
   .homeHeader nav ul {
-    width: 50%;
     background-color: #2B331B;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .homeHeader nav ul li {
     margin: 10px 0;
@@ -860,7 +890,7 @@ footer p {
   }
   .homeHeader img {
     width: 45%;
-    bottom: -4px;
+    bottom: 0;
   }
 
   .info .infoContainer {
@@ -993,7 +1023,6 @@ footer p {
     margin-bottom: 200px;
   }
   .homeHeader nav ul {
-    width: 70%;
     font-size: 1rem;
   }
   .homeHeader img {
